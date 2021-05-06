@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>web_header</title>
+	<meta charset="utf-8">
+	<script>
+  			(function(d) {
+   			 var config = {
+     		 kitId: 'hqx4acg',
+      		scriptTimeout: 3000,
+     		 async: true
+   			 },
+    		h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+  			})(document);
+	</script>
+	<style type="text/css">
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+		<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;500;700&display=swap" rel="stylesheet">
+		@import url(//fonts.googleapis.com/earlyaccess/notosanskr.css);
+body {
+  font-family: "Noto Sans KR", sans-serif !important;
+}
+
+		
+		
+		.margin30{margin:0; margin-top: 30px;}
+		.margin110{margin:0; margin-top:110px; }
+		
+		.information {margin:0; padding-bottom:15vh; padding-top: 15vh; background-color: rgb(192,192,192);}
+		.contest {margin:0; margin-top: 15vh; padding:15vh; padding-top: : 5vh; background-image: url(./image/contest_background.png); background-repeat: no-repeat; background-attachment: fixed; background-position: center center;background-size:auto 100%; }
+		.recipe {width:800px; height:1080px; margin:auto; margin-top: 100px;background-color: gray;}
+		.booth {margin:auto; margin-top:10vh;}
+		.back {width:240px; height:280px; margin:11px;  background-color: rgba(0,0,0,0); ;}
+		
+		.top{top:0px; left:0px;}
+		.mid{top:0px; left:calc(50vw - 120px);}
+		
+		
+		.margin{padding:4vw;}
+		.box{cursor: pointer;}
+		#detail1{display:block;}
+		#detail1:hover + #peach {display:block;}
+		#peach{display:none;  position: fixed; width:50vw; height:50vh; top:10vh; left:5vw; background-color: gray;}
+		
+		.width30{width:33%;}
+		.width900{width:58%;}
+		.width1000{width:65%;}
+		.white{color:white;}
+		.greenbutton{}
+		.greenbutton:hover {background-position: center center; background-image: url(./image/navbutton_green.png); background-repeat:no-repeat; background-size:auto 100%;}
+		.purplebutton{}
+		.purplebutton:hover{background-position: center center; background-image: url(./image/navbutton_purple.png); background-repeat:no-repeat; background-size:auto 100%;}
+		.pinkbutton{} 
+		.pinkbutton:hover{background-position: center center; background-image: url(./image/navbutton_pink.png); background-repeat:no-repeat; background-size:auto 100%;} 
+		.blackbutton{} 
+		.blackbutton:hover{background-position:center center; background-image: url(./image/navbutton_black.png); background-repeat:no-repeat; background-size:auto 100%;} 
+		.imghover{content: url(./image/info_pic.png);}
+		.imghover:hover{content:url(./image/info_pic2.png);}
+		.map{margin-bottom:3vh; border-radius: 3px;}
+		.reset{margin:0;}
+		.reset1{padding:0; margin:0;}
+		.scroll{margin:auto; padding:0;  margin-top:0px; }
+		.sticky{position: -webkit-sticky; position: sticky; top:10px; z-index:100; }
+
+
+		.navbackground{top:0; left:0; width:75%; height:75%; margin-left: auto;margin-right: auto;}
+		.boothtop{top:6vw;left:0; width:80%; height:auto; margin-left: auto; margin-right: auto; z-index: 0}
+		.boothbottom{top:0;left:0; width:90%; height:auto; margin-left: auto; margin-right: auto; z-index: 0}
+		.subbox{margin:auto; top:0; left:0; z-index: 8; width:100%; height:100%; text-align: center;}
+		.titleposition{margin: auto; top:70%; left:0;width:100%; height:100%; text-align: center;}
+
+		
+		.infobox{margin-top:15vw; margin-bottom:8vw; border-radius:2px;border:solid;border-color: rgb(227,53,103);}
+		.infobox2{margin-top:2vw; margin-bottom:3.5vw; }
+		.imgtree1{img position:relative; }
+
+		.relative{position: relative;}
+		.absolute{position: absolute;}
+		.flex {display: flex;}
+		
+		html,body,header,div,nav,img{margin:0; scroll-behavior: smooth;}
+		div,nav{margin:auto;}
+		nav{margin-top:0px; margin-bottom:10vh;}
+		h1{word-break: keep-all; font-family: sandoll-andante, sans-serif; font-style: normal; font-weight: 400; text-align: center; padding-top: 16.5%; color:white; font-size:4vw;}
+		h3{word-break: keep-all;font-family: sandoll-andante, sans-serif; font-style: normal; font-weight: 400; margin:auto; position: 50%;text-align: center; padding-bottom:30px; color:white; font-size:2.5vw; text-decoration-color: rgba(147,0,234,0.5); }
+		h4{word-break: keep-all;font-family: sandoll-andante, sans-serif; font-style: normal; font-weight: 400; margin:auto;text-align: center; padding-bottom:30px; color:black; font-size:2.5vw;}
+		h2{word-break: keep-all;font-family: sandoll-andante, sans-serif; font-size:1.5vw;font-style: normal; font-weight: 400;margin:auto;  text-align: center;line-height: 230%; white-space:pre;color:rgb(227,53,103);}
+
+		p{word-break: keep-all;margin:auto; text-align:center; line-height: 230%; font-size: 1em;}
+		li{font-family: sandoll-andante, sans-serif; font-style: normal; font-weight: 400; margin:auto; list-style: none; text-align: center; font-size:1.5vw; font-weight: 700; white-space:pre;}
+		li, a {text-decoration: none; list-style: none; color:black; text-align: center; width:auto; height:auto;}
+		a{}
+		a:hover{margin:auto; display: block; text-decoration: none; list-style: none; color:black; text-align: center; width: 100%; height:auto; }
+		
+		ul{height: 20vh;padding-left:10vw; padding-right:10vw; background-color: rgba(255,255,255,0);}
+		img{display: block; margin-left: auto; margin-right: auto;}
+
+		.typeP{font-family: sandoll-andante, sans-serif; font-style: normal; font-weight: 400;font-size:2vw; color:white; font-weight:500; line-height: 6.1vw;}
+		.typep2{font-size:1vw; line-height:4.5vh; color:white; font-weight:400; }
+		.typep3{font-size:1vw; line-height:4.5vh; color:black; font-weight:400; }
+		.typep4{font-size:1%; line-height:3.5vh;  font-weight:400; word-break: keep-all;}
+		.empath{font-weight: 600; color:rgb(102,46,171);}
+		.empath2{font-weight: 600; color:rgb(227,53,103);}
+	</style>
+</head>
+<body>
+	<div class="scroll">
+		<ul class="flex sticky">
+			<div class="greenbutton margin" >
+				<li class="reset"><a href="#nav" class="reset">HOME</a></li>
+			</div>
+			<div class="purplebutton margin" >
+				<li class="reset"><a href="#infomation" class="reset">MOOD CHANGER</a></li>
+			</div>
+			<div class="pinkbutton margin" >
+				<li class="reset"><a href="#contest" class="reset">FEEL THE EAT</a></li>
+			</div>
+			
+			<div class="blackbutton margin" >
+				<li class="reset"><a href="#booth" class="reset">제철 감정</a></li>
+			</div>
+		</ul>
+	<nav id="nav" class="relative">
+			<img src="./image/nav_background.gif" class="relative navbackground">
+				<div class="subbox absolute">
+						<h1>MOOD CHANGER</h1>
+						<p class="typeP">Emotions start from mouth.</p>
+						<p class="typeP">스페이스 온실</p>
+						<p class="typeP">2049.10.26-28</p>
+				</div>
+	</nav>
+	
+		
+
+		<div class="information" id="infomation">
+			<div class="width1000" style="padding:10vw;background-image: url(./image/navbutton_purple.png);background-repeat:no-repeat; background-size:auto 100%; background-position: center;">
+				<h3>What's MOOD CHANGER?</h3>
+				<h3 class="reset1">MOOD CHANGER란?</h3>
+			</div>
+			<div class="infobox2 width1000 typep2">
+				<p>잔잔한 일상에 강렬한 자극</span>이 필요한가요? </p>
+				<p>슬럼프에 빠진 당신, 창작물에 <span class="empath">새로운 영감</span>이 필요한가요?</p> 
+				<p><span class="empath">실연의 슬픔</span>에서 벗어나고 싶으신가요? </p>
+				<br>
+				<p>스페이스 온실에서만 재배되는 청과물은 <span class="empath">맛보는 즉시</span> 여러분의 기분을 바꿔 드립니다.</p>
+				<p>이 재료들을 자유롭게 조합해 보다 섬세한 감정을 요리해 보세요.</p>
+			
+	    		
+	    	</div>
+	    	<div class="imghover width1000"></div>
+	
+
+	    	<img src="아이콘버튼">
+	   	</div>
+		<div class="contest" id="contest">
+			<div style="padding:10vw;background-image: url(./image/navbutton_pink.png);background-repeat:no-repeat; background-size:auto 100%; background-position: center; opacity:20;">
+					<h3>FEEL THE EAT</h3>
+					<h3 class="reset1">요리 콘테스트</h3>
+			</div>
+			<div class=" width1000">
+				<div class="infobox2 typep3">
+					<p>2년마다 한 번씩 열리는 Feel the Eat이 벌써 <span class="empath2">16회</span>를 맞이했습니다.</p>
+					<p>올해에는 <span class="empath2">새로 개발된 품종</span>이 추가되어 더욱 다채롭고 구체적인 감정을 만들 수 있게 되었습니다.</p>
+				</div>
+				<div class="typep3">
+					<p>날짜: 2049. Oct. 16-18 오전 11시~ 오후 4시</p>
+					<p>장소: 스페이스 온실</p>
+				</div>
+				
+					<div class="infobox">
+						<h2 style="padding-bottom: 10px;"> 올해의 주제</h2>
+					
+						
+						<div class="flex">
+							<h2 class=" width30">Most Sparkling</h2>
+							<h2 class=" width30">Most Intense</h2>
+							<h2 class=" width30">Most Unrealistic</h2>
+						</div>
+						<div class="flex ">	
+							<h2 class=" width30">Appetizer</h2>
+							<h2 class=" width30">Main</h2>
+							<h2 class=" width30">Dessert</h2>
+						</div>
+					</div>
+				
+
+			</div>
+				
+			
+				
+					
+				<h4 class="typep3">오시는 길</h4>
+				<img src="./image/map.png" class="width1000 map">
+				<p class="typep3">버스: 42.309번 스페이스 온실 역 하차, 도보 15분</p>
+				<p class="typep3">지하철: 2호선 스페이스 온실 역 하차, 도보 7분</p>
+
+			
+			<div class="infobox2 width900 typep3">
+				<p>콘테스트에 참여하지 않더라도, 시식 위원으로 선발되어 요리를 시식해보거나,</p>
+				<p> 현장 판매되는 제철 감정을 구매해 직접 맛볼 수 있습니다.</p>
+				<p> 상세한 사항은 추후 공개 예정입니다.</p>
+				<p> 위 정보는 상시 변경될 가능성이 있습니다.</p>
+			</div>
+			
+			<div class="infobox2 width900 flex">
+				<img src="./image/button-02.png" style="width:25%; height: auto;">
+				<img src="./image/button-03.png" style="width:25%; height: auto;">
+
+			</div>
+		</div>
+		<div class="booth" id="booth">
+			<div class=" relative">
+					<img src="./image/booth_top.png" class="relative boothtop">
+					<div class="titleposition absolute">
+						<h4>제철 감정</h4>
+					</div>
+			</div>
+			<div class="boothbottom relative" style="width:100%; height:120vh; background-image: url(./image/booth_background.png);background-repeat:repeat-y; background-size:70% auto; background-position: center; z-index: -10">
+					
+					<div class="absolute" style="right:85%; top:0%; z-index: 100; ">
+						<img src="./image/leftwall.png" style="height:120vh; width:7vw;" >
+					</div>
+
+					<div class="absolute" style="left:15%;top:20vh;;z-index: 3;">
+					<img src="./image/lefttree.png" style="width:auto; height:88vh;">
+						
+					</div>
+
+					<div class="absolute" style="left:15%;top:-0.2vh;;z-index:10;">
+					<img src="./image/branch.png" style="width:40vw; height:auto;">
+						<div id="detail1" class="absolute box" style="left:19vw;top:8.3vw; z-index:20;">
+							<img src="./image/peach2.png"  style="width:7vw; height:auto;">
+						</div>
+						<div id="detail1" class="absolute box" style="background-color: white; padding:0.5vw;border:solid; left:19vw; top:17vw; z-index:20; width:13vw;" >
+							<h2 style="text-align: left;color:black;">HAPPEACH</h2>
+									<div class="typep4"style="padding-left: 40%">
+											<p style="text-align: left;">보송보송한 행복감</p>
+											<p style="text-align: left;">1일권장량: 3개</p>
+									</div>
+						</div>
+						
+					</div>
+
+					<div class="absolute" style="right:15%;top:10vh;;z-index: 3;">
+					<img src="./image/palmtree.png" style="width:auto; height:100vh;">
+					</div>
+
+
+
+					<div class="absolute" style="right:15%;top:19vh; z-index:15;">
+					<img src="./image/bananaleaf.png" style="width:30vw; height:auto;">
+						<div class="absolute" style="right:20%; bottom:0vh; z-index:0;">
+							<img src="./image/banana.png" style="width:13vw; height:auto;">
+						</div>
+
+						<div id="detail1" class="absolute box" style="background-color: white; padding:0.5vw;border:solid; left:-3vw; top:17vw; z-index:20; width:13vw;" >
+							<h2 style="text-align: left; color:black;">F-NANA</h2>
+									<div class="typep4" style="padding-left: 40%">
+											<p style="text-align: left;">50년지기 친근함</p>
+											<p style="text-align: left;">1일권장량: 5개</p>
+									</div>
+						</div>
+					</div>
+
+					<div class="absolute" style="right:15%;top:19vh; z-index:15;">
+					<img src="./image/bananaleaf.png" style="width:30vw; height:auto;">
+				</div>
+
+					
+
+					 
+
+					
+					
+
+
+
+					<div class="absolute" style="left:15%; top:100vh; z-index: 100;">
+					<img src="./image/ground.png" style="width:69.2vw; height:auto; z-index:15;">
+						<div class="absolute" style="left:15vw;top:0vw; z-index:20;">
+							<img src="./image/onion.png" style="width:22vw; height:auto;">
+						</div>
+						<div id="detail1" class="absolute box" style="background-color: white; padding:0.5vw;border:solid; left:30vw; top:10vw; z-index:20; width:13vw;" >
+							<h2 style="text-align: left;color:black;">ANION</h2>
+									<div class="typep4"style="padding-left: 40%">
+											<p style="text-align: left;">아니 이건 징그러움</p>
+											<p style="text-align: left;">1일권장량: 1알</p>
+									</div>
+						</div>
+						<div class="absolute" style="right:14vw;top:-10vw; z-index:20;">
+							<img src="./image/cabbage.png" style="width:18vw; height:auto;">
+						</div>
+						<div id="detail1" class="absolute box" style="background-color: white; padding:0.5vw;border:solid; left:25vw; top:-5vw; z-index:20; width:13vw;" >
+							<h2 style="text-align: left;color:black;">SADDAGE</h2>
+									<div class="typep4"style="padding-left: 40%">
+											<p style="text-align: left;">깊은 슬픔</p>
+											<p style="text-align: left;">1일권장량: 7장</p>
+									</div>
+						</div>
+						<div class="absolute" style="left:0vw;top:-12vw; z-index:-100;">
+							<img src="./image/bush1.png" style="width:25vw; height:auto;">
+						</div>
+					</div>
+
+
+					<div class="absolute" style="left:85%; top:0%; z-index: 100;">
+					<img src="./image/rightwall.png" style="height:120vh; width:7vw;">
+					</div>
+
+					
+			
+			
+			</div>
+		</div>
+		<footer>
+			
+			<div style ="margin:auto; margin-top:40%; margin-bottom:20vw; padding-left: 10vw; " class="flex typep4 width900">
+				<div class="width30 " >
+					<p style="text-align: left; font-weight: 600;">Contact</p>
+					<p style="text-align: left;">TEL:02.385.1026</p>
+					<p style="text-align: left;">EMAIL:feeltheeat@MCER.co.kr
+				</div>
+				<div class="width30">
+					<p style="text-align: left; font-weight: 600;">Support</p>
+					<p style="text-align: left;">World Bio Tech Association</p>
+					<p style="text-align: left;">WBO.com</p>
+				</div>
+				<div class="width30">
+					<p style="text-align: left;"><br></p>
+					<p style="text-align: left;">MBS Master Chief</p>
+					<p style="text-align: left;">MBN/masterchief/info.co.kr</p>
+				</div>
+		</footer> 
+
+		
+
+		
+	</div>
+	
+</body>
+</html>
